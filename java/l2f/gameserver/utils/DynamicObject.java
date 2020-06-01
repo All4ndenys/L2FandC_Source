@@ -3,10 +3,10 @@ package l2f.gameserver.utils;
 import java.io.File;
 import java.util.regex.Pattern;
 
-import l2f.commons.annotations.NotNull;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.annotations.NotNull;
 
 public class DynamicObject
 {

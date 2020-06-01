@@ -3,6 +3,8 @@ package l2f.gameserver.utils;
 
 import java.io.Serializable;
 
+import org.dom4j.Element;
+
 import l2f.commons.geometry.Point3D;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -19,8 +21,6 @@ import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.templates.mapregion.RestartArea;
 import l2f.gameserver.templates.mapregion.RestartPoint;
 import l2f.gameserver.templates.spawn.SpawnRange;
-
-import org.dom4j.Element;
 
 public class Location extends Point3D implements SpawnRange, Serializable
 {

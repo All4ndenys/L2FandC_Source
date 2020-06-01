@@ -9,14 +9,14 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.annotations.Nullable;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.utils.Debug;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TournamentTeamsManager
 {

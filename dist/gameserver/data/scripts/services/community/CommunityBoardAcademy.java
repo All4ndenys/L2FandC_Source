@@ -1,12 +1,16 @@
 package services.community;
 
-import gnu.trove.map.hash.TIntObjectHashMap;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.academy.AcademyList;
+import fandc.academy.AcademyRewards;
+import gnu.trove.map.hash.TIntObjectHashMap;
 import javolution.util.FastMap;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
@@ -30,12 +34,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Util;
 import l2f.gameserver.utils.ValueSortMap;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.academy.AcademyList;
-import fandc.academy.AcademyRewards;
 
 /**
  * @author Infern0

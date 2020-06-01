@@ -7,11 +7,11 @@ import java.util.logging.Logger;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import javolution.util.FastMap;
-import l2f.gameserver.Config;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+
+import javolution.util.FastMap;
+import l2f.gameserver.Config;
 
 public class EmotionsTable
 {

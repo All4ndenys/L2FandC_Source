@@ -7,9 +7,6 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.commons.annotations.Nullable;
-import l2f.gameserver.scripts.ScriptFile;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -26,6 +23,8 @@ import fandc.facebook.FacebookProfilesHolder;
 import fandc.facebook.OfficialPost;
 import fandc.facebook.OfficialPostsHolder;
 import fandc.facebook.action.Comment;
+import l2f.commons.annotations.Nullable;
+import l2f.gameserver.scripts.ScriptFile;
 
 public class ExtractComments implements ScriptFile, ActionsExtractor
 {

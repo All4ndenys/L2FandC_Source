@@ -18,8 +18,8 @@
  */
 package fandc.dailyquests.drops.conds;
 
-import l2f.gameserver.stats.Env;
 import fandc.dailyquests.drops.LevelHolder;
+import l2f.gameserver.stats.Env;
 
 /**
  * @author UnAfraid

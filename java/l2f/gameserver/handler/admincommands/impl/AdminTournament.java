@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.dao.MailDAO;
 import l2f.gameserver.data.StringHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -18,9 +21,6 @@ import l2f.gameserver.model.entity.tournament.BattleRecord;
 import l2f.gameserver.model.entity.tournament.BattleScheduleManager;
 import l2f.gameserver.model.entity.tournament.TournamentStatus;
 import l2f.gameserver.utils.Language;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AdminTournament implements IAdminCommandHandler
 {

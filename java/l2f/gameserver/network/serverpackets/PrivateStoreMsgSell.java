@@ -1,9 +1,9 @@
 package l2f.gameserver.network.serverpackets;
 
 
-import l2f.gameserver.model.Player;
-
 import org.apache.commons.lang3.StringUtils;
+
+import l2f.gameserver.model.Player;
 
 public class PrivateStoreMsgSell extends L2GameServerPacket
 {

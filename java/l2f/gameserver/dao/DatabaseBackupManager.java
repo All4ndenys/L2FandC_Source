@@ -8,10 +8,10 @@ import java.util.Calendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import l2f.gameserver.Config;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.Config;
 
 public final class DatabaseBackupManager
 {

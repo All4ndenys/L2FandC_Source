@@ -4,7 +4,6 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
-
 import l2f.gameserver.model.Player;
 
 public class Achievement

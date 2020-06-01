@@ -1,7 +1,5 @@
 package l2f.gameserver.instancemanager;
 
-import gov.nasa.worldwind.formats.dds.DDSConverter;
-
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 import java.sql.Connection;
@@ -14,6 +12,10 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gov.nasa.worldwind.formats.dds.DDSConverter;
 import javolution.util.FastMap;
 import javolution.util.FastTable;
 import l2f.commons.dbutils.DbUtils;
@@ -37,9 +39,6 @@ import l2f.gameserver.randoms.CaptchaImage;
 import l2f.gameserver.skills.AbnormalEffect;
 import l2f.gameserver.tables.GmListTable;
 import l2f.gameserver.utils.AutoHuntingPunish;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AutoHuntingManager
 {

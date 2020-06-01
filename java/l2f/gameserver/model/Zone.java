@@ -12,7 +12,6 @@ import l2f.commons.collections.MultiValueSet;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
 import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.instancemanager.ReflectionManager;
 import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;

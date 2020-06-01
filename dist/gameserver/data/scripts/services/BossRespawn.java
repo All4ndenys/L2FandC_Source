@@ -4,17 +4,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import bosses.EpicBossState.State;
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.TimeUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import bosses.EpicBossState.State;
 
 /**
  * @date 2016

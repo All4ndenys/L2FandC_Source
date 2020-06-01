@@ -3,13 +3,13 @@ package l2f.gameserver.instancemanager;
 import java.util.HashMap;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.model.Zone;
 import l2f.gameserver.model.Zone.ZoneType;
 import l2f.gameserver.model.entity.Coliseum;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 // TODO: zones for underground coliseum, restart points, spawn points etc.

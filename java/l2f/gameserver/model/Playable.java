@@ -5,6 +5,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import fandc.managers.GmEventManager;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.util.Rnd;
 import l2f.commons.util.concurrent.atomic.AtomicState;
@@ -37,7 +38,6 @@ import l2f.gameserver.templates.CharTemplate;
 import l2f.gameserver.templates.item.EtcItemTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate;
 import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
-import fandc.managers.GmEventManager;
 
 public abstract class Playable extends Creature
 {

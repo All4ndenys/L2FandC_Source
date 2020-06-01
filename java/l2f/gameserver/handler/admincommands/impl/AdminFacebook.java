@@ -2,14 +2,6 @@ package l2f.gameserver.handler.admincommands.impl;
 
 import java.io.IOException;
 
-import l2f.gameserver.ConfigHolder;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.handler.admincommands.AdminCommandHandler;
-import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.ShowBoard;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +14,13 @@ import fandc.facebook.FacebookActionType;
 import fandc.facebook.FacebookDatabaseHandler;
 import fandc.facebook.OfficialPost;
 import fandc.facebook.OfficialPostsHolder;
+import l2f.gameserver.ConfigHolder;
+import l2f.gameserver.data.htm.HtmCache;
+import l2f.gameserver.handler.admincommands.AdminCommandHandler;
+import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
+import l2f.gameserver.model.GameObjectsStorage;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.network.serverpackets.ShowBoard;
 
 public class AdminFacebook implements IAdminCommandHandler
 {

@@ -6,6 +6,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.managers.MailManager;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.Config;
 import l2f.gameserver.dao.CharacterDAO;
@@ -28,12 +33,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.managers.MailManager;
 
 
 /**

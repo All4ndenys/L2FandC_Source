@@ -1,12 +1,12 @@
 package l2f.gameserver.network.serverpackets;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import l2f.gameserver.model.base.TeamType;
 import l2f.gameserver.model.entity.events.impl.UndergroundColiseumBattleEvent;
 import l2f.gameserver.model.entity.events.objects.UCMemberObject;
 import l2f.gameserver.model.entity.events.objects.UCTeamObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author VISTALL

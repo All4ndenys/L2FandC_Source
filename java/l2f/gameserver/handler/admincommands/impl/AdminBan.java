@@ -1,5 +1,8 @@
 package l2f.gameserver.handler.admincommands.impl;
 
+import java.util.Collection;
+import java.util.StringTokenizer;
+
 import l2f.gameserver.Announcements;
 import l2f.gameserver.Config;
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
@@ -20,9 +23,6 @@ import l2f.gameserver.security.HWIDBan;
 import l2f.gameserver.utils.AutoBan;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.TimeUtils;
-
-import java.util.Collection;
-import java.util.StringTokenizer;
 
 public class AdminBan implements IAdminCommandHandler
 {

@@ -1,11 +1,10 @@
 package fandc.facebook;
 
-import gnu.trove.impl.Constants;
-import gnu.trove.map.hash.TObjectIntHashMap;
-
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import gnu.trove.impl.Constants;
+import gnu.trove.map.hash.TObjectIntHashMap;
 import l2f.gameserver.ConfigHolder;
 
 public class FacebookProfile

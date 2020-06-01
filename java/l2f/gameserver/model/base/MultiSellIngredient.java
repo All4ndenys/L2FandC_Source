@@ -2,7 +2,6 @@ package l2f.gameserver.model.base;
 
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.model.items.ItemAttributes;
-import l2f.gameserver.templates.item.ItemTemplate;
 
 public class MultiSellIngredient implements Cloneable
 {

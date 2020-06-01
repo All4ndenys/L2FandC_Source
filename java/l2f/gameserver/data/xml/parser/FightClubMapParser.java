@@ -9,6 +9,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import org.dom4j.Element;
+
 import javolution.util.FastMap;
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.data.xml.AbstractDirParser;
@@ -20,8 +22,6 @@ import l2f.gameserver.model.entity.events.fightclubmanager.FightClubTeamType;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.NpcGroupLocation;
-
-import org.dom4j.Element;
 
 /**
  * @author VISTALL

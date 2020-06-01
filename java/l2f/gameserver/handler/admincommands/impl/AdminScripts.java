@@ -2,9 +2,6 @@ package l2f.gameserver.handler.admincommands.impl;
 
 import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2f.gameserver.model.Player;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.Scripts;
 
 public class AdminScripts implements IAdminCommandHandler
 {

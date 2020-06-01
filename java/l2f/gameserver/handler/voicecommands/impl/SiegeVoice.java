@@ -1,6 +1,9 @@
 package l2f.gameserver.handler.voicecommands.impl;
 
 import java.text.SimpleDateFormat;
+
+import org.apache.commons.lang3.math.NumberUtils;
+
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.model.Player;
@@ -12,8 +15,6 @@ import l2f.gameserver.model.entity.residence.Residence;
 import l2f.gameserver.network.serverpackets.CastleSiegeInfo;
 import l2f.gameserver.network.serverpackets.ExShowDominionRegistry;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-
-import org.apache.commons.lang3.math.NumberUtils;
 
 /**
  * Command .siege which allows players to Participate to Castle Sieges or check their starting dates.

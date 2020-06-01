@@ -1,7 +1,5 @@
 package l2f.gameserver;
 
-import gnu.trove.map.hash.TIntIntHashMap;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,6 +18,16 @@ import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.BooleanUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+import org.apache.commons.lang3.reflect.FieldUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+
+import gnu.trove.map.hash.TIntIntHashMap;
 import l2f.commons.configuration.ExProperties;
 import l2f.commons.net.AdvIP;
 import l2f.commons.net.nio.impl.SelectorConfig;
@@ -32,15 +40,6 @@ import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.utils.AddonsConfig;
 import l2f.gameserver.utils.GArray;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.BooleanUtils;
-import org.apache.commons.lang3.math.NumberUtils;
-import org.apache.commons.lang3.reflect.FieldUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
 
 public class Config
 {

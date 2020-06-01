@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Future;
 
+import org.apache.commons.lang3.tuple.MutablePair;
+import org.apache.commons.lang3.tuple.Pair;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
@@ -17,9 +20,6 @@ import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.components.IStaticPacket;
 import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.tuple.MutablePair;
-import org.apache.commons.lang3.tuple.Pair;
 
 /**
  * @author VISTALL

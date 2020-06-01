@@ -7,14 +7,15 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.hwid.HwidGamer.PlayerThreat;
 import l2f.gameserver.hwid.HwidLogging.SimpleLog;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.ChangeLogManager;
 import l2f.gameserver.utils.BatchStatement;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class HwidEngine
 {

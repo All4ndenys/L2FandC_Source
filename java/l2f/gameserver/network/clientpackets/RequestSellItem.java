@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.math.SafeMath;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Player;
@@ -8,11 +10,6 @@ import l2f.gameserver.model.entity.CCPHelpers.itemLogs.ItemLogHandler;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.ExBuySellList;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.utils.ItemActionLog;
-import l2f.gameserver.utils.ItemStateLog;
-import l2f.gameserver.utils.Log;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * packet type id 0x37

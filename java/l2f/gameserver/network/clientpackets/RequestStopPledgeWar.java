@@ -1,7 +1,6 @@
 package l2f.gameserver.network.clientpackets;
 
 import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.olympiad.Olympiad;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.model.pledge.UnitMember;
 import l2f.gameserver.network.serverpackets.ActionFail;

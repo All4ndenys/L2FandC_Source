@@ -1,5 +1,7 @@
 package l2f.gameserver.handler.voicecommands.impl;
 
+import static l2f.gameserver.handler.voicecommands.IVoicedCommandHandler._log;
+
 import java.util.Map;
 import java.util.Map.Entry;
 

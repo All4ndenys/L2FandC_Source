@@ -2,8 +2,6 @@ package l2f.gameserver.model.base;
 
 import java.util.Arrays;
 
-import l2f.gameserver.model.base.TeamType;
-
 public enum TeamType
 {
 	NONE,

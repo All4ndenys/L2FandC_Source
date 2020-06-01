@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import quests._234_FatesWhisper;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
@@ -59,6 +58,7 @@ import l2f.gameserver.utils.AutoBan;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.SiegeUtils;
 import l2f.gameserver.utils.Util;
+import quests._234_FatesWhisper;
 
 public class Donations extends Functions
 {

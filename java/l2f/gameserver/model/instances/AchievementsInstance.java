@@ -7,7 +7,6 @@ import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.instancemanager.achievements_engine.AchievementsManager;
 import l2f.gameserver.instancemanager.achievements_engine.base.Achievement;
 import l2f.gameserver.instancemanager.achievements_engine.base.Condition;
-import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.items.Inventory;
 import l2f.gameserver.model.items.ItemInstance;
@@ -15,6 +14,7 @@ import l2f.gameserver.network.serverpackets.MyTargetSelected;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.network.serverpackets.ValidateLocation;
 import l2f.gameserver.network.serverpackets.components.IStaticPacket;
+import l2f.gameserver.templates.npc.NpcTemplate;
 
 public class AchievementsInstance extends NpcInstance
 {

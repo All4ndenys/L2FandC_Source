@@ -3,6 +3,9 @@ package fandc.streaming;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbcp.BasicDataSource;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
@@ -10,9 +13,6 @@ import l2f.gameserver.GameServer;
 import l2f.gameserver.Shutdown.ShutdownMode;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.listener.game.OnShutdownListener;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class StreamDatabaseFactory extends BasicDataSource implements OnShutdownListener
 {

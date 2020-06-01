@@ -9,6 +9,9 @@ import java.util.Map;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+
 import l2f.commons.annotations.NotNull;
 import l2f.commons.annotations.Nullable;
 import l2f.commons.permission.Permission;
@@ -60,9 +63,6 @@ import l2f.gameserver.utils.Debug;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Language;
 import l2f.gameserver.utils.Location;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
 
 public final class ActiveBattleManager
 {

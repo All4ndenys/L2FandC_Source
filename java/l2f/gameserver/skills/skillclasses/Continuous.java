@@ -1,5 +1,7 @@
 package l2f.gameserver.skills.skillclasses;
 
+import java.util.List;
+
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Creature;
@@ -9,8 +11,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.stats.conditions.ConditionTargetRelation;
 import l2f.gameserver.templates.StatsSet;
-
-import java.util.List;
 
 public class Continuous extends Skill
 {

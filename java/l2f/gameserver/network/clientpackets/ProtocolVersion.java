@@ -1,13 +1,12 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.network.serverpackets.KeyPacket;
 import l2f.gameserver.network.serverpackets.SendStatus;
-import l2f.gameserver.network.serverpackets.ServerClose;
 import l2f.gameserver.utils.Log;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ProtocolVersion extends L2GameClientPacket
 {

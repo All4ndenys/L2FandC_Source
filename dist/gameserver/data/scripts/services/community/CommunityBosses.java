@@ -14,6 +14,11 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import actions.RewardListInfo;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.cache.ImagesCache;
@@ -33,12 +38,6 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.npc.MinionData;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.HtmlUtils;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import actions.RewardListInfo;
 
 public class CommunityBosses implements ScriptFile, ICommunityBoardHandler
 {

@@ -7,6 +7,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.math.NumberUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.managers.GmEventManager;
 import l2f.commons.annotations.Nullable;
 import l2f.commons.geometry.Polygon;
 import l2f.commons.lang.ArrayUtils;
@@ -124,12 +129,6 @@ import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
-
-import org.apache.commons.lang3.math.NumberUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.managers.GmEventManager;
 
 public abstract class Skill extends StatTemplate implements Cloneable
 {

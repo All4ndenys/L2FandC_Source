@@ -24,10 +24,10 @@ import java.sql.ResultSet;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2f.gameserver.database.DatabaseFactory;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.database.DatabaseFactory;
 
 /**
  * Table to know all the skills enchant names

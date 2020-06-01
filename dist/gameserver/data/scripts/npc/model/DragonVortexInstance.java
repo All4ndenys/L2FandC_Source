@@ -1,7 +1,6 @@
 package npc.model;
 
 import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.templates.npc.NpcTemplate;

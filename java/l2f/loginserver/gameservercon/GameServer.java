@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-import l2f.loginserver.Config;
 import l2f.commons.net.AdvIP;
+import l2f.loginserver.Config;
 
 public class GameServer
 {

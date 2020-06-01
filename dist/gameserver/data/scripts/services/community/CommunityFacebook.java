@@ -5,6 +5,17 @@ import java.util.Calendar;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.facebook.ActiveTask;
+import fandc.facebook.ActiveTasksHandler;
+import fandc.facebook.CompletedTasksHistory;
+import fandc.facebook.FacebookActionType;
+import fandc.facebook.FacebookIdentityType;
+import fandc.facebook.FacebookProfile;
+import fandc.facebook.FacebookProfilesHolder;
+import fandc.facebook.TaskNoAvailableException;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.data.StringHolder;
@@ -22,18 +33,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.facebook.ActiveTask;
-import fandc.facebook.ActiveTasksHandler;
-import fandc.facebook.CompletedTasksHistory;
-import fandc.facebook.FacebookActionType;
-import fandc.facebook.FacebookIdentityType;
-import fandc.facebook.FacebookProfile;
-import fandc.facebook.FacebookProfilesHolder;
-import fandc.facebook.TaskNoAvailableException;
 
 /**
  * Facebook Community Manager

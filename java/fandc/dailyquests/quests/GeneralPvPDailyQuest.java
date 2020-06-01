@@ -18,6 +18,7 @@
  */
 package fandc.dailyquests.quests;
 
+import fandc.dailyquests.AbstractDailyQuest;
 import l2f.gameserver.Config;
 import l2f.gameserver.listener.actor.OnDeathListener;
 import l2f.gameserver.model.Creature;
@@ -25,7 +26,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.actor.listener.CharListenerList;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.utils.HtmlUtils;
-import fandc.dailyquests.AbstractDailyQuest;
 
 /**
  * @author UnAfraid

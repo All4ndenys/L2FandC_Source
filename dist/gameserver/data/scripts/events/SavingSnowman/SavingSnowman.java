@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Announcements;
@@ -38,9 +41,6 @@ import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class SavingSnowman extends Functions implements ScriptFile, OnDeathListener, OnPlayerEnterListener
 {

@@ -1,5 +1,8 @@
 package l2f.gameserver.network.clientpackets;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import l2f.commons.math.SafeMath;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ItemHolder;
@@ -20,9 +23,6 @@ import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.ItemFunctions;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RequestMultiSellChoose extends L2GameClientPacket
 {

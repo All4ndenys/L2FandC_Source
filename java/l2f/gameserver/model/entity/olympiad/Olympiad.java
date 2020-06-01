@@ -9,6 +9,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.configuration.ExProperties;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
@@ -29,9 +32,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.MultiValueIntegerMap;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Olympiad
 {

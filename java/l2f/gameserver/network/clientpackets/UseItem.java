@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
@@ -17,8 +19,6 @@ import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.skills.TimeStamp;
 import l2f.gameserver.tables.PetDataTable;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class UseItem extends L2GameClientPacket
 {

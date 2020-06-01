@@ -1,17 +1,16 @@
 package l2f.gameserver.model.entity.tournament;
 
-import gnu.trove.list.TIntList;
-import gnu.trove.list.array.TIntArrayList;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import gnu.trove.list.TIntList;
+import gnu.trove.list.array.TIntArrayList;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class Team
 {

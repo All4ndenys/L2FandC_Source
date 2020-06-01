@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.apache.commons.lang3.StringUtils;
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.CHashIntObjectMap;
+
 import l2f.gameserver.dao.OlympiadHistoryDAO;
 import l2f.gameserver.data.StringHolder;
 import l2f.gameserver.model.Player;
@@ -13,10 +17,6 @@ import l2f.gameserver.model.entity.olympiad.OlympiadHistory;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.HtmlUtils;
-
-import org.apache.commons.lang3.StringUtils;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.CHashIntObjectMap;
 
 /**
  * @author fandc

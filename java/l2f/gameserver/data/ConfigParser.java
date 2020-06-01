@@ -13,15 +13,15 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.annotations.Nullable;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.skills.AbnormalEffect;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ConfigParser
 {

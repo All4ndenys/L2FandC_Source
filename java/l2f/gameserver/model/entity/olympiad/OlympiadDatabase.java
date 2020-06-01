@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.Config;
@@ -22,9 +25,6 @@ import l2f.gameserver.model.base.ClassId;
 import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class OlympiadDatabase
 {

@@ -6,12 +6,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.model.entity.olympiad.Olympiad;
-import l2f.gameserver.model.SubClass;
-import l2f.gameserver.model.base.ClassId;
-import l2f.gameserver.model.base.PlayerClass;
-import l2f.gameserver.model.base.Race;
-import l2f.gameserver.model.instances.VillageMasterInstance;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.cache.ImagesCache;
@@ -22,8 +19,14 @@ import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
 import l2f.gameserver.model.Player;
+import l2f.gameserver.model.SubClass;
+import l2f.gameserver.model.base.ClassId;
+import l2f.gameserver.model.base.PlayerClass;
+import l2f.gameserver.model.base.Race;
 import l2f.gameserver.model.entity.events.impl.SiegeEvent;
+import l2f.gameserver.model.entity.olympiad.Olympiad;
 import l2f.gameserver.model.instances.SchemeBufferInstance;
+import l2f.gameserver.model.instances.VillageMasterInstance;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.model.pledge.SubUnit;
 import l2f.gameserver.network.clientpackets.CharacterCreate;
@@ -38,9 +41,6 @@ import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 {

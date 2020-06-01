@@ -4,8 +4,6 @@ import static org.jboss.netty.channel.Channels.pipeline;
 
 import java.nio.charset.Charset;
 
-import l2f.gameserver.Config;
-
 import org.jboss.netty.channel.ChannelHandler;
 import org.jboss.netty.channel.ChannelPipeline;
 import org.jboss.netty.channel.ChannelPipelineFactory;
@@ -13,6 +11,8 @@ import org.jboss.netty.handler.codec.frame.DelimiterBasedFrameDecoder;
 import org.jboss.netty.handler.codec.frame.Delimiters;
 import org.jboss.netty.handler.codec.string.StringDecoder;
 import org.jboss.netty.handler.codec.string.StringEncoder;
+
+import l2f.gameserver.Config;
 
 public class TelnetPipelineFactory implements ChannelPipelineFactory
 {

@@ -7,6 +7,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.OutputFormat;
+import org.dom4j.io.XMLWriter;
+
 import l2f.commons.crypt.CryptUtil;
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
@@ -14,13 +21,6 @@ import l2f.gameserver.data.xml.holder.FakePlayerNpcsHolder;
 import l2f.gameserver.skills.AbnormalEffect;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.npc.FakePlayerTemplate;
-
-import org.apache.commons.lang3.StringUtils;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.Element;
-import org.dom4j.io.OutputFormat;
-import org.dom4j.io.XMLWriter;
 
 public final class FakePlayerNpcsParser extends AbstractFileParser<FakePlayerNpcsHolder>
 {

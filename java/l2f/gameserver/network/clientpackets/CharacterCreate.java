@@ -3,6 +3,9 @@ package l2f.gameserver.network.clientpackets;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.dao.AccountBonusDAO;
 import l2f.gameserver.dao.CharacterDAO;
@@ -32,9 +35,6 @@ import l2f.gameserver.templates.item.CreateItem;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CharacterCreate extends L2GameClientPacket
 {

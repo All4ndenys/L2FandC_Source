@@ -1,5 +1,7 @@
 package l2f.gameserver.model.instances;
 
+import java.util.Calendar;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Party;
 import l2f.gameserver.model.Player;
@@ -12,8 +14,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import java.util.Calendar;
 
 public final class FestivalGuideInstance extends NpcInstance
 {

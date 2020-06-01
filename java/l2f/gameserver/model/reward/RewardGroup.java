@@ -8,7 +8,6 @@ import l2f.commons.math.SafeMath;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.stats.Stats;
 
 public class RewardGroup implements Cloneable

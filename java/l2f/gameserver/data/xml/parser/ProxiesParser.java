@@ -4,6 +4,10 @@ import java.io.File;
 import java.net.UnknownHostException;
 import java.util.Iterator;
 
+import org.dom4j.Element;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ProxiesHolder;
@@ -11,10 +15,6 @@ import l2f.gameserver.utils.ProxyRequirement;
 import l2f.gameserver.utils.proxyrequirement.CharactersLevel;
 import l2f.gameserver.utils.proxyrequirement.IPSubnet;
 import l2f.gameserver.utils.proxyrequirement.MinimumCharMessages;
-
-import org.dom4j.Element;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class ProxiesParser extends AbstractFileParser<ProxiesHolder>
 {

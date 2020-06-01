@@ -10,6 +10,9 @@ import java.util.NavigableSet;
 import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.math.random.RndSelector;
 import l2f.commons.threading.RunnableImpl;
@@ -40,9 +43,6 @@ import l2f.gameserver.stats.conditions.Condition;
 import l2f.gameserver.taskmanager.AiTaskManager;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.NpcUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DefaultAI extends CharacterAI
 {

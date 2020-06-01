@@ -2,6 +2,9 @@ package npc.model.events;
 
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.tuple.Pair;
+
 import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.model.Party;
 import l2f.gameserver.model.Player;
@@ -10,9 +13,6 @@ import l2f.gameserver.model.entity.events.impl.UndergroundColiseumEvent;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.tuple.Pair;
 
 /**
  * @author VISTALL

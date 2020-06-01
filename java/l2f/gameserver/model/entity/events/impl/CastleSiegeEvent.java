@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import org.napile.primitive.Containers;
+import org.napile.primitive.sets.IntSet;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.Config;
@@ -46,9 +49,6 @@ import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.support.MerchantGuard;
 import l2f.gameserver.utils.Location;
-
-import org.napile.primitive.Containers;
-import org.napile.primitive.sets.IntSet;
 
 public class CastleSiegeEvent extends SiegeEvent<Castle, SiegeClanObject>
 {

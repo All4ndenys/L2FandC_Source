@@ -25,6 +25,13 @@ import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+
+import fandc.dailyquests.drops.Droplist;
+import fandc.dailyquests.drops.DroplistGroup;
+import fandc.dailyquests.drops.DroplistItem;
+import fandc.security.AntiFeedManager;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Zone.ZoneType;
@@ -34,14 +41,6 @@ import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAli
 import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Util;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-
-import fandc.dailyquests.drops.Droplist;
-import fandc.dailyquests.drops.DroplistGroup;
-import fandc.dailyquests.drops.DroplistItem;
-import fandc.security.AntiFeedManager;
 
 /**
  * @author UnAfraid

@@ -1,17 +1,15 @@
 	package l2f.gameserver.skills.effects;
 	
-	import l2f.gameserver.ai.CharacterAI;
 	import l2f.gameserver.ai.CtrlIntention;
-	import l2f.gameserver.cache.Msg;
-	import l2f.gameserver.geodata.GeoEngine;
-	import l2f.gameserver.model.Creature;
-	import l2f.gameserver.model.Effect;
-	import l2f.gameserver.model.Player;
-	import l2f.gameserver.model.entity.events.impl.SiegeEvent;
-	import l2f.gameserver.model.instances.SummonInstance;
-	import l2f.gameserver.network.serverpackets.components.SystemMsg;
-	import l2f.gameserver.stats.Env;
-	import l2f.gameserver.utils.PositionUtils;
+import l2f.gameserver.cache.Msg;
+import l2f.gameserver.geodata.GeoEngine;
+import l2f.gameserver.model.Effect;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.model.entity.events.impl.SiegeEvent;
+import l2f.gameserver.model.instances.SummonInstance;
+import l2f.gameserver.network.serverpackets.components.SystemMsg;
+import l2f.gameserver.stats.Env;
+import l2f.gameserver.utils.PositionUtils;
 	
 	public final class EffectDummy2 extends Effect
 	{

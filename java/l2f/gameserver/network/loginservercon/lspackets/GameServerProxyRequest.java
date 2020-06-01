@@ -4,15 +4,15 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.ProxiesHolder;
 import l2f.gameserver.network.loginservercon.AuthServerCommunication;
 import l2f.gameserver.network.loginservercon.ReceivablePacket;
 import l2f.gameserver.network.loginservercon.gspackets.GameServerProxyResponse;
 import l2f.gameserver.utils.ProxyRequirement;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class GameServerProxyRequest extends ReceivablePacket
 {

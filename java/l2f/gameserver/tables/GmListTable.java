@@ -8,10 +8,10 @@ import java.util.List;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-import l2f.gameserver.network.serverpackets.SystemMessage2;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.network.serverpackets.Say2;
+import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.ChatType;
+import l2f.gameserver.network.serverpackets.components.SystemMsg;
 
 public class GmListTable
 {

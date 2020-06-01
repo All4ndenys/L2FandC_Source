@@ -5,13 +5,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.dom4j.Element;
+
 import l2f.commons.data.xml.AbstractFileParser;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.TournamentMapHolder;
 import l2f.gameserver.model.entity.tournament.TournamentMap;
 import l2f.gameserver.utils.Location;
-
-import org.dom4j.Element;
 
 public final class TournamentMapParser extends AbstractFileParser<TournamentMapHolder>
 {

@@ -3,12 +3,12 @@ package l2f.gameserver.network.serverpackets;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.data.htm.bypasshandler.BypassType;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.components.ChatType;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ShowBoard extends L2GameServerPacket
 {

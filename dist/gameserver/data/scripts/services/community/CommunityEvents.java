@@ -3,6 +3,9 @@ package services.community;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.data.htm.HtmCache;
@@ -16,9 +19,6 @@ import l2f.gameserver.model.entity.events.impl.AbstractFightClub;
 import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CommunityEvents implements ScriptFile, ICommunityBoardHandler
 {

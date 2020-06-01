@@ -8,12 +8,12 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.loginserver.Config;
 import l2f.loginserver.accounts.Account;
 import l2f.loginserver.database.L2DatabaseFactory;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AccountMerge
 {

@@ -1,20 +1,20 @@
 package l2f.loginserver.serverpackets;
 
-import l2f.commons.net.AdvIP;
-import l2f.commons.net.utils.NetUtils;
-import l2f.loginserver.Config;
-import l2f.loginserver.GameServerManager;
-import l2f.loginserver.accounts.Account;
-import l2f.loginserver.gameservercon.GameServer;
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.tuple.Pair;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.tuple.Pair;
+
+import l2f.commons.net.utils.NetUtils;
+import l2f.loginserver.Config;
+import l2f.loginserver.GameServerManager;
+import l2f.loginserver.accounts.Account;
+import l2f.loginserver.gameservercon.GameServer;
 
 public final class ServerList extends L2LoginServerPacket {
 	private List<ServerData> _tempServers = new ArrayList<ServerData>();

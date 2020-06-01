@@ -22,10 +22,10 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2f.gameserver.utils.DocumentParser;
-
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
+
+import l2f.gameserver.utils.DocumentParser;
 
 /**
  * @author UnAfraid

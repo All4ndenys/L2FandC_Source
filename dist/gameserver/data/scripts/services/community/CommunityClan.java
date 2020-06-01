@@ -12,6 +12,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.annotations.Nullable;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
@@ -38,11 +43,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CommunityClan extends Functions implements ScriptFile, ICommunityBoardHandler
 {

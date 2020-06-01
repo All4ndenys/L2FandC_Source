@@ -1,10 +1,10 @@
 package l2f.gameserver.instancemanager.achievements_engine.conditions;
 
 import l2f.gameserver.instancemanager.achievements_engine.base.Condition;
-import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.Hero;
 import l2f.gameserver.model.entity.olympiad.Olympiad;
+import l2f.gameserver.templates.StatsSet;
 
 public class HeroCount extends Condition
 {

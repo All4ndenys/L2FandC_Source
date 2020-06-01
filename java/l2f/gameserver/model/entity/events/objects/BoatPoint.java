@@ -1,9 +1,9 @@
 package l2f.gameserver.model.entity.events.objects;
 
 
-import l2f.gameserver.utils.Location;
-
 import org.dom4j.Element;
+
+import l2f.gameserver.utils.Location;
 
 public class BoatPoint extends Location
 {

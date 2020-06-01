@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.managers.OfflineBufferManager;
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.MultiSellHolder;
 import l2f.gameserver.handler.admincommands.AdminCommandHandler;
@@ -30,12 +35,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.scripts.Scripts;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.managers.OfflineBufferManager;
 
 public class RequestBypassToServer extends /*L2GameClientPacket*/AbstractBypassPacket
 {

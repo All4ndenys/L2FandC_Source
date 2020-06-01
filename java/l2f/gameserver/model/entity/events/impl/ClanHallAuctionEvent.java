@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.dao.JdbcEntityState;
 import l2f.gameserver.dao.SiegeClanDAO;
@@ -18,8 +20,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.templates.item.ItemTemplate;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author FandC

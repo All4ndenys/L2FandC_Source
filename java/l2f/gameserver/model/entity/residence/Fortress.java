@@ -6,6 +6,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.dao.ClanDataDAO;
@@ -16,9 +19,6 @@ import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.item.ItemTemplate;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Fortress extends Residence
 {

@@ -1,5 +1,7 @@
 package l2f.gameserver.model.instances;
 
+import java.util.StringTokenizer;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ai.CtrlIntention;
 import l2f.gameserver.model.Player;
@@ -11,8 +13,6 @@ import l2f.gameserver.scripts.Events;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.WarehouseFunctions;
-
-import java.util.StringTokenizer;
 
 public final class NpcFriendInstance extends MerchantInstance
 {

@@ -6,6 +6,10 @@ import java.util.Date;
 import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.GameServer;
@@ -34,10 +38,6 @@ import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.tables.FakePlayersTable;
 import l2f.gameserver.utils.TimeUtils;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 public class CommunityBoard implements ScriptFile, ICommunityBoardHandler

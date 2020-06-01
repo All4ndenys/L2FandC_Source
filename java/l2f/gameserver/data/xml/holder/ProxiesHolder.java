@@ -4,11 +4,11 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.LinkedHashMap;
 
-import l2f.commons.data.xml.AbstractHolder;
-import l2f.gameserver.utils.ProxyRequirement;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.commons.data.xml.AbstractHolder;
+import l2f.gameserver.utils.ProxyRequirement;
 
 public final class ProxiesHolder extends AbstractHolder
 {

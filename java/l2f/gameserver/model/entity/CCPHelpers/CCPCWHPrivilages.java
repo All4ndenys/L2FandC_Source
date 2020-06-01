@@ -1,5 +1,7 @@
 package l2f.gameserver.model.entity.CCPHelpers;
 
+import java.util.List;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.database.mysql;
@@ -7,8 +9,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.model.pledge.UnitMember;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-
-import java.util.List;
 
 public class CCPCWHPrivilages
 {

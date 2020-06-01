@@ -6,6 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.concurrent.Future;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.threading.RunnableImpl;
@@ -36,10 +40,6 @@ import l2f.gameserver.stats.Stats;
 import l2f.gameserver.tables.PetDataTable;
 import l2f.gameserver.templates.item.WeaponTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class PetInstance extends Summon
 {

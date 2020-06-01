@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.data.xml.holder.CharTemplateHolder;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -19,9 +22,6 @@ import l2f.gameserver.templates.npc.FakePlayerTemplate;
 import l2f.gameserver.templates.npc.IFakePlayer;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class FakePcInstance extends NpcInstance implements IFakePlayer
 {

@@ -9,6 +9,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.dao.OlympiadNobleDAO;
@@ -16,10 +20,6 @@ import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.idfactory.IdFactory;
 import l2f.gameserver.model.entity.Hero;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class DataMerge
 {

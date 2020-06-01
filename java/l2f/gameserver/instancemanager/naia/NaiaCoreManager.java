@@ -1,6 +1,9 @@
 package l2f.gameserver.instancemanager.naia;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.geometry.Polygon;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
@@ -15,9 +18,6 @@ import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * @author pchayka

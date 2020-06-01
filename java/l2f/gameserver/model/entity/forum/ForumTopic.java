@@ -10,13 +10,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import l2f.gameserver.ConfigHolder;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.utils.BatchStatement;
-
 import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.ConfigHolder;
+import l2f.gameserver.model.Player;
+import l2f.gameserver.utils.BatchStatement;
 
 public class ForumTopic implements Comparable<ForumTopic>
 {

@@ -3,6 +3,9 @@ package l2f.gameserver.handler.admincommands.impl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.Config;
 import l2f.gameserver.dao.CharacterDAO;
@@ -20,9 +23,6 @@ import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.utils.AutoBan;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.TimeUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AdminCheckBot implements IAdminCommandHandler
 {

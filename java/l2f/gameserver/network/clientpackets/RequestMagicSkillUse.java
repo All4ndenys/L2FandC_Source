@@ -5,7 +5,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Skill;
 import l2f.gameserver.model.items.attachment.FlagItemAttachment;
 import l2f.gameserver.network.serverpackets.ActionFail;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.tables.SkillTable;
 
 public class RequestMagicSkillUse extends L2GameClientPacket

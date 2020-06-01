@@ -8,6 +8,9 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.database.DatabaseFactory;
@@ -22,9 +25,6 @@ import l2f.gameserver.stats.Env;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.BatchStatement;
 import l2f.gameserver.utils.SqlBatch;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class EffectsDAO
 {

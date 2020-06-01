@@ -6,9 +6,21 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.util.Date;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.datatables.EnchantNamesTable;
+import fandc.datatables.OfflineBuffersTable;
+import fandc.facebook.ActionsExtractingManager;
+import fandc.facebook.CompletedTasksHistory;
+import fandc.facebook.FacebookAutoAnnouncement;
+import fandc.facebook.FacebookProfilesHolder;
+import fandc.facebook.OfficialPostsHolder;
+import fandc.streaming.AFKStreamersHandler;
+import fandc.streaming.TwitchParser;
+import fandc.votingengine.VotingRewardAPI;
 import l2f.commons.listener.Listener;
 import l2f.commons.listener.ListenerList;
-import l2f.commons.net.AdvIP;
 import l2f.commons.net.nio.impl.SelectorThread;
 import l2f.commons.versioning.Version;
 import l2f.gameserver.cache.CrestCache;
@@ -22,7 +34,6 @@ import l2f.gameserver.data.xml.holder.EventHolder;
 import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.data.xml.holder.StaticObjectHolder;
-import l2f.gameserver.data.xml.parser.ProxiesParser;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.database.LoginDatabaseFactory;
 import l2f.gameserver.database.merge.ClanDataMerge;
@@ -84,7 +95,6 @@ import l2f.gameserver.network.GamePacketHandler;
 import l2f.gameserver.network.loginservercon.AuthServerCommunication;
 import l2f.gameserver.network.telnet.TelnetServer;
 import l2f.gameserver.scripts.Scripts;
-import l2f.gameserver.security.HWIDBan;
 import l2f.gameserver.tables.AugmentationData;
 import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.tables.EnchantHPBonusTable;
@@ -100,21 +110,6 @@ import l2f.gameserver.taskmanager.tasks.RestoreOfflineTraders;
 import l2f.gameserver.utils.Debug;
 import l2f.gameserver.utils.Strings;
 import net.sf.ehcache.CacheManager;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.datatables.EnchantNamesTable;
-//import fandc.datatables.CharacterMonthlyRanking;
-import fandc.datatables.OfflineBuffersTable;
-import fandc.facebook.ActionsExtractingManager;
-import fandc.facebook.CompletedTasksHistory;
-import fandc.facebook.FacebookAutoAnnouncement;
-import fandc.facebook.FacebookProfilesHolder;
-import fandc.facebook.OfficialPostsHolder;
-import fandc.streaming.AFKStreamersHandler;
-import fandc.streaming.TwitchParser;
-import fandc.votingengine.VotingRewardAPI;
 
 public class GameServer
 {

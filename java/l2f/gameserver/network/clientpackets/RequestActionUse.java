@@ -1,6 +1,9 @@
 package l2f.gameserver.network.clientpackets;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
@@ -35,9 +38,6 @@ import l2f.gameserver.tables.PetSkillsTable;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.AutoHuntingPunish;
 import l2f.gameserver.utils.TradeHelper;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * packet type id 0x56

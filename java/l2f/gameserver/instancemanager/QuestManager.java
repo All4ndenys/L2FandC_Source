@@ -1,10 +1,10 @@
 package l2f.gameserver.instancemanager;
 
-import l2f.gameserver.model.quest.Quest;
-
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import l2f.gameserver.model.quest.Quest;
 
 public class QuestManager
 {

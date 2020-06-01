@@ -22,6 +22,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+
+import fandc.dailyquests.AbstractDailyQuest;
 import l2f.gameserver.listener.actor.OnDeathListener;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -30,11 +34,6 @@ import l2f.gameserver.model.quest.Quest;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.Util;
-
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-
-import fandc.dailyquests.AbstractDailyQuest;
 
 /**
  * @author UnAfraid

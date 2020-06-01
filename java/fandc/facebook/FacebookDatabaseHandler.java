@@ -1,7 +1,5 @@
 package fandc.facebook;
 
-import gnu.trove.map.hash.TObjectIntHashMap;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,10 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.EnumSet;
 
-import l2f.gameserver.database.DatabaseFactory;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import gnu.trove.map.hash.TObjectIntHashMap;
+import l2f.gameserver.database.DatabaseFactory;
 
 public final class FacebookDatabaseHandler
 {

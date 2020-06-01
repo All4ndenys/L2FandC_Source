@@ -6,9 +6,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.commons.annotations.Nullable;
-import l2f.gameserver.scripts.ScriptFile;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -23,6 +20,8 @@ import fandc.facebook.FacebookProfilesHolder;
 import fandc.facebook.OfficialPost;
 import fandc.facebook.OfficialPostsHolder;
 import fandc.facebook.action.Like;
+import l2f.commons.annotations.Nullable;
+import l2f.gameserver.scripts.ScriptFile;
 
 public class ExtractLikes implements ScriptFile, ActionsExtractor
 {

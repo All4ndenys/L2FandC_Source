@@ -2,6 +2,10 @@ package l2f.gameserver.model.entity.olympiad;
 
 import java.util.Set;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.net.nio.impl.MMOConnection;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Effect;
@@ -21,7 +25,6 @@ import l2f.gameserver.network.serverpackets.Revive;
 import l2f.gameserver.network.serverpackets.SkillCoolTime;
 import l2f.gameserver.network.serverpackets.SkillList;
 import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.skills.EffectType;
 import l2f.gameserver.skills.TimeStamp;
@@ -32,10 +35,6 @@ import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.FixEnchantOlympiad;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Log;
-
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TeamMember
 {

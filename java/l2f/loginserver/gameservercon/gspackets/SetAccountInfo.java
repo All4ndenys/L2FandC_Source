@@ -1,10 +1,10 @@
 package l2f.loginserver.gameservercon.gspackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.loginserver.accounts.SessionManager;
 import l2f.loginserver.gameservercon.GameServer;
 import l2f.loginserver.gameservercon.ReceivablePacket;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * @author VISTALL

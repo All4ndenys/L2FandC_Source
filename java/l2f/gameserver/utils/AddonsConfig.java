@@ -1,7 +1,5 @@
 package l2f.gameserver.utils;
 
-import gnu.trove.map.hash.TIntIntHashMap;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,11 +8,12 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.quest.Quest;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import gnu.trove.map.hash.TIntIntHashMap;
+import l2f.gameserver.Config;
+import l2f.gameserver.model.quest.Quest;
 
 public class AddonsConfig
 {

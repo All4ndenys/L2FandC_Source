@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.math.SafeMath;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Config;
@@ -17,7 +19,6 @@ import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.manor.CropProcure;
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * Format: (ch) d [dddd]

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import bosses.ValakasManager;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.ThreadPoolManager;
@@ -19,7 +20,6 @@ import l2f.gameserver.network.serverpackets.components.NpcString;
 import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.utils.Location;
-import bosses.ValakasManager;
 
 /**
  * @author pchayka

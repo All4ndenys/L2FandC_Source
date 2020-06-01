@@ -1,6 +1,9 @@
 package l2f.gameserver.network.serverpackets;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.net.nio.impl.SendablePacket;
 import l2f.gameserver.GameServer;
 import l2f.gameserver.data.xml.holder.ItemHolder;
@@ -12,8 +15,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.GameClient;
 import l2f.gameserver.network.serverpackets.components.IStaticPacket;
 import l2f.gameserver.templates.item.ItemTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class L2GameServerPacket extends SendablePacket<GameClient> implements IStaticPacket
 {

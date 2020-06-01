@@ -3,6 +3,8 @@ package l2f.gameserver.network.clientpackets;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.auction.Auction;
@@ -16,8 +18,6 @@ import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
 import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.TradeHelper;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 
 public class SetPrivateStoreSellList extends L2GameClientPacket

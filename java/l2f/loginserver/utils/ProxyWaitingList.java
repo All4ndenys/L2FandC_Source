@@ -1,16 +1,11 @@
 package l2f.loginserver.utils;
 
-import java.net.InetAddress;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import l2f.commons.annotations.Nullable;
 import l2f.loginserver.Config;
-import l2f.loginserver.GameServerManager;
 import l2f.loginserver.L2LoginClient;
-import l2f.loginserver.gameservercon.GameServer;
-import l2f.loginserver.gameservercon.lspackets.GameServerProxyRequest;
-import l2f.loginserver.serverpackets.ServerList;
 
 public class ProxyWaitingList
 {

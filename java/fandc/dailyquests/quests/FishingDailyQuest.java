@@ -18,12 +18,12 @@
  */
 package fandc.dailyquests.quests;
 
+import fandc.dailyquests.AbstractDailyQuest;
 import l2f.gameserver.listener.actor.player.OnFishDieListener;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.actor.listener.CharListenerList;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.utils.HtmlUtils;
-import fandc.dailyquests.AbstractDailyQuest;
 
 /**
  * @author Gnacik

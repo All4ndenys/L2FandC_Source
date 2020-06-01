@@ -1,8 +1,5 @@
 package l2f.gameserver.model.entity.tournament;
 
-import gnu.trove.TIntCollection;
-import gnu.trove.iterator.TIntIterator;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -24,6 +21,12 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.TIntCollection;
+import gnu.trove.iterator.TIntIterator;
 import l2f.commons.annotations.NotNull;
 import l2f.commons.annotations.Nullable;
 import l2f.commons.threading.RunnableImpl;
@@ -40,10 +43,6 @@ import l2f.gameserver.model.mail.Mail;
 import l2f.gameserver.network.serverpackets.ExNoticePostArrived;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.Debug;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class BattleScheduleManager
 {

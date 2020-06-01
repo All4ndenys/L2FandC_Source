@@ -18,6 +18,7 @@
  */
 package fandc.dailyquests.quests;
 
+import fandc.dailyquests.AbstractDailyQuest;
 import l2f.gameserver.listener.item.OnItemEnchantListener;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.actor.listener.CharListenerList;
@@ -25,7 +26,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.quest.QuestState;
 import l2f.gameserver.templates.item.ItemTemplate.Grade;
 import l2f.gameserver.utils.HtmlUtils;
-import fandc.dailyquests.AbstractDailyQuest;
 
 /**
  * @author Gnacik

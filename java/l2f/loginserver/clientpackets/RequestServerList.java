@@ -1,11 +1,9 @@
 package l2f.loginserver.clientpackets;
 
-import l2f.loginserver.Config;
 import l2f.loginserver.L2LoginClient;
 import l2f.loginserver.SessionKey;
 import l2f.loginserver.serverpackets.LoginFail.LoginFailReason;
 import l2f.loginserver.serverpackets.ServerList;
-import l2f.loginserver.utils.ProxyWaitingList;
 
 /**
  * Format: ddc

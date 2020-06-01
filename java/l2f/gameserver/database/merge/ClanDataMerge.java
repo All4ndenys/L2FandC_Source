@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.idfactory.IdFactory;
@@ -15,9 +18,6 @@ import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.model.pledge.SubUnit;
 import l2f.gameserver.model.pledge.UnitMember;
 import l2f.gameserver.tables.ClanTable;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ClanDataMerge
 {

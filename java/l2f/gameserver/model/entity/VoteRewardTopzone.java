@@ -1,5 +1,16 @@
 package l2f.gameserver.model.entity;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.votingengine.VotingSettings;
 import javolution.util.FastMap;
 import l2f.gameserver.Announcements;
 import l2f.gameserver.Config;
@@ -9,18 +20,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.Say2;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.utils.ItemFunctions;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.json.JSONObject;
-import org.json.JSONTokener;
-
-import fandc.votingengine.VotingSettings;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 public class VoteRewardTopzone
 {

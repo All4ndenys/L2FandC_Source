@@ -7,8 +7,6 @@ import java.text.ParseException;
 import java.util.List;
 import java.util.Optional;
 
-import l2f.gameserver.scripts.ScriptFile;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -21,6 +19,7 @@ import fandc.facebook.FacebookProfile;
 import fandc.facebook.FacebookProfilesHolder;
 import fandc.facebook.OfficialPost;
 import fandc.facebook.OfficialPostsHolder;
+import l2f.gameserver.scripts.ScriptFile;
 
 public class ExtractOfficialPosts implements ScriptFile, ActionsExtractor
 {

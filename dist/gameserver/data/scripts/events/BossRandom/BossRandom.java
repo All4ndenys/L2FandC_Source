@@ -1,5 +1,10 @@
 package events.BossRandom;
  
+import java.util.ArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Announcements;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
@@ -12,11 +17,6 @@ import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.NpcUtils;
 import l2f.gameserver.utils.ReflectionUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
  
 public class BossRandom extends Functions implements ScriptFile {
 

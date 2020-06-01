@@ -3,14 +3,15 @@ package l2f.gameserver.taskmanager;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Effect;
 import l2f.gameserver.model.Playable;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CancelTaskManager
 {

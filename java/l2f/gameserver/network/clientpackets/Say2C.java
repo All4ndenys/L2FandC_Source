@@ -4,6 +4,16 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.graphbuilder.math.Expression;
+import com.graphbuilder.math.ExpressionParseException;
+import com.graphbuilder.math.ExpressionTree;
+import com.graphbuilder.math.VarMap;
+
+import fandc.security.WordsFinder;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.cache.ItemInfoCache;
@@ -35,17 +45,6 @@ import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.MapUtils;
 import l2f.gameserver.utils.Strings;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.graphbuilder.math.Expression;
-import com.graphbuilder.math.ExpressionParseException;
-import com.graphbuilder.math.ExpressionTree;
-import com.graphbuilder.math.VarMap;
-
-import fandc.security.WordsFinder;
 
 public class Say2C extends L2GameClientPacket
 {

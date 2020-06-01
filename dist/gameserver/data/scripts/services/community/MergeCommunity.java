@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.cache.ImagesCache;
@@ -24,9 +27,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.pledge.Clan;
 import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.scripts.ScriptFile;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class MergeCommunity implements ScriptFile, ICommunityBoardHandler
 {

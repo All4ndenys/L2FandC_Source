@@ -10,6 +10,8 @@ import java.util.Set;
 
 import javax.management.MBeanServer;
 
+import org.apache.commons.io.FileUtils;
+
 import l2f.commons.dao.JdbcEntityStats;
 import l2f.commons.lang.StatsUtils;
 import l2f.commons.net.nio.impl.SelectorThread;
@@ -27,8 +29,6 @@ import l2f.gameserver.taskmanager.EffectTaskManager;
 import l2f.gameserver.utils.GameStats;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.statistics.LiveCacheStatistics;
-
-import org.apache.commons.io.FileUtils;
 
 public class TelnetPerfomance implements TelnetCommandHolder
 {

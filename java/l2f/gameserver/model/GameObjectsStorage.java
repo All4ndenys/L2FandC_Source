@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.text.StrTable;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.instances.MonsterInstance;
 import l2f.gameserver.model.instances.NpcInstance;
 import l2f.gameserver.model.instances.PetInstance;
 import l2f.gameserver.model.items.ItemInstance;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 //TODO [G1ta0] submit the bredyatinu to hell

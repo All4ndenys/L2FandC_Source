@@ -10,11 +10,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.Player;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.model.Player;
 
 public class VotingRewardCache
 {

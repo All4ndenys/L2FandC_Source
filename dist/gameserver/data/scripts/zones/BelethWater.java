@@ -6,8 +6,8 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Zone;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.Location;
+import l2f.gameserver.utils.ReflectionUtils;
 
 /**
  * Created by dkn on 18-Oct-16.

@@ -9,6 +9,9 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.annotations.NotNull;
 import l2f.commons.annotations.Nullable;
 import l2f.commons.data.xml.AbstractHolder;
@@ -20,9 +23,6 @@ import l2f.gameserver.skills.AbnormalEffect;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.DynamicConfig;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class ConfigHolder extends AbstractHolder
 {

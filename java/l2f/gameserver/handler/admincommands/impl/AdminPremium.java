@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.PremiumHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -18,8 +21,6 @@ import l2f.gameserver.model.premium.PremiumAccount;
 import l2f.gameserver.model.premium.PremiumStart;
 import l2f.gameserver.network.serverpackets.ExBR_PremiumState;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Admin handler to give premium bonuses

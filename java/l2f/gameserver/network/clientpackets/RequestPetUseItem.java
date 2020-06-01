@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -9,8 +11,6 @@ import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.ItemFunctions;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class RequestPetUseItem extends L2GameClientPacket
 {

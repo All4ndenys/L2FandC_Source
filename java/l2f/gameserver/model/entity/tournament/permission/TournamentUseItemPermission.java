@@ -1,13 +1,13 @@
 package l2f.gameserver.model.entity.tournament.permission;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.model.Playable;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.tournament.BattleInstance;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.permission.actor.player.UseItemPermission;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 public class TournamentUseItemPermission implements UseItemPermission
 {

@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.cache.ImagesCache;
 import l2f.gameserver.data.htm.HtmCache;
@@ -26,8 +28,6 @@ import l2f.gameserver.network.serverpackets.TutorialEnableClientEvent;
 import l2f.gameserver.network.serverpackets.TutorialShowHtml;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.templates.item.ItemTemplate;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * Bypass support for tournament system

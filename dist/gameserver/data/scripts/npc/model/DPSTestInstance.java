@@ -7,6 +7,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.model.Creature;
 import l2f.gameserver.model.Player;
@@ -17,8 +19,6 @@ import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.tables.SkillTable;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.math.NumberUtils;
 
 public final class DPSTestInstance extends NpcInstance
 {

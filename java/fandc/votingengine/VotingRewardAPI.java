@@ -24,6 +24,10 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.votingengine.VotingSettings.MessageType;
 import l2f.gameserver.Config;
 import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2f.gameserver.handler.voicecommands.VoicedCommandHandler;
@@ -32,11 +36,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.Say2;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.loginserver.ThreadPoolManager;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.votingengine.VotingSettings.MessageType;
 
 /**
  * @author UnAfraid

@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import l2f.commons.math.SafeMath;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Creature;
@@ -10,7 +12,6 @@ import l2f.gameserver.model.items.PcFreight;
 import l2f.gameserver.model.items.PcInventory;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.templates.item.ItemTemplate;
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  * @author VISTALL

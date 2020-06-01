@@ -4,6 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javolution.util.FastList;
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
@@ -26,11 +31,6 @@ import l2f.gameserver.network.serverpackets.ShowBoard;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.scripts.ScriptFile;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 {

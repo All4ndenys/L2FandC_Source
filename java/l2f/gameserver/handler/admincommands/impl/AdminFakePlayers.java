@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+import org.dom4j.DocumentException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.data.xml.holder.FakePlayerNpcsHolder;
 import l2f.gameserver.data.xml.holder.NpcHolder;
@@ -17,10 +21,6 @@ import l2f.gameserver.network.FakeGameClient;
 import l2f.gameserver.tables.FakePlayersTable;
 import l2f.gameserver.templates.npc.FakePlayerTemplate;
 import l2f.gameserver.utils.Util;
-
-import org.dom4j.DocumentException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AdminFakePlayers implements IAdminCommandHandler
 {

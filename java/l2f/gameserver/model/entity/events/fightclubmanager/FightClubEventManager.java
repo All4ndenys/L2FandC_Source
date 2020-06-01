@@ -11,11 +11,15 @@ import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.data.xml.holder.EventHolder;
+import l2f.gameserver.data.xml.holder.FightClubMapHolder;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
@@ -23,10 +27,13 @@ import l2f.gameserver.model.base.ClassId;
 import l2f.gameserver.model.entity.events.EventType;
 import l2f.gameserver.model.entity.events.GlobalEvent;
 import l2f.gameserver.model.entity.events.impl.AbstractFightClub;
+import l2f.gameserver.model.entity.events.impl.AbstractFightClub.EventState;
 import l2f.gameserver.model.entity.events.impl.DuelEvent;
+import l2f.gameserver.model.entity.events.impl.fightclub.KoreanStyleEvent;
 import l2f.gameserver.model.entity.olympiad.Olympiad;
 import l2f.gameserver.model.instances.SchemeBufferInstance;
 import l2f.gameserver.network.serverpackets.ConfirmDlg;
+import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2f.gameserver.network.serverpackets.Say2;
 import l2f.gameserver.network.serverpackets.TutorialCloseHtml;
 import l2f.gameserver.network.serverpackets.TutorialShowHtml;
@@ -34,15 +41,7 @@ import l2f.gameserver.network.serverpackets.TutorialShowQuestionMark;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.Location;
-import l2f.gameserver.data.xml.holder.FightClubMapHolder;
-import l2f.gameserver.model.entity.events.fightclubmanager.FightClubGameRoom;
 import l2f.gameserver.utils.Util;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.model.entity.events.impl.AbstractFightClub.EventState;
-import l2f.gameserver.model.entity.events.impl.fightclub.KoreanStyleEvent;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class FightClubEventManager
 {

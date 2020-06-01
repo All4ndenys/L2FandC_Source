@@ -1,5 +1,7 @@
 package l2f.gameserver.network.clientpackets;
 
+import org.napile.primitive.maps.IntObjectMap;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.dao.CharacterDAO;
 import l2f.gameserver.dao.CharacterPostFriendDAO;
@@ -7,7 +9,6 @@ import l2f.gameserver.model.Player;
 import l2f.gameserver.network.serverpackets.ExConfirmAddingPostFriend;
 import l2f.gameserver.network.serverpackets.SystemMessage2;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import org.napile.primitive.maps.IntObjectMap;
 
 /**
  * @author VISTALL

@@ -1,7 +1,5 @@
 package l2f.gameserver.model.instances;
 
-import gnu.trove.set.hash.TIntHashSet;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,6 +8,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import gnu.trove.set.hash.TIntHashSet;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
 import l2f.gameserver.Announcements;
@@ -38,9 +37,9 @@ import l2f.gameserver.model.reward.RewardItem;
 import l2f.gameserver.model.reward.RewardList;
 import l2f.gameserver.model.reward.RewardType;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
 import l2f.gameserver.network.serverpackets.SocialAction;
 import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.stats.Stats;
 import l2f.gameserver.tables.SkillTable;

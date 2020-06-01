@@ -10,6 +10,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.lang.ArrayUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.ConfigHolder;
@@ -29,9 +32,6 @@ import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.utils.Debug;
 import l2f.gameserver.utils.Language;
 import l2f.gameserver.utils.TimeUtils;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class BattleNotificationManager extends RunnableImpl
 {

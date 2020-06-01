@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+import org.apache.commons.lang3.time.DurationFormatUtils;
+
 import l2f.commons.lang.StatsUtils;
 import l2f.gameserver.Config;
 import l2f.gameserver.GameTimeController;
@@ -17,8 +19,6 @@ import l2f.gameserver.network.telnet.TelnetCommand;
 import l2f.gameserver.network.telnet.TelnetCommandHolder;
 import l2f.gameserver.tables.GmListTable;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.time.DurationFormatUtils;
 
 public class TelnetStatus implements TelnetCommandHolder
 {

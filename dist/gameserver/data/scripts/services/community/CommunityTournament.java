@@ -8,6 +8,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.cache.ImagesCache;
@@ -37,10 +41,6 @@ import l2f.gameserver.utils.Debug;
 import l2f.gameserver.utils.Language;
 import l2f.gameserver.utils.TimeUtils;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Grand Bosses Community Manager

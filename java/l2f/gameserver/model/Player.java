@@ -37,6 +37,25 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
+import org.napile.primitive.Containers;
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.CHashIntObjectMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fandc.academy.AcademyList;
+import fandc.datatables.OfflineBuffersTable;
+import fandc.facebook.FacebookProfile;
+import fandc.facebook.FacebookProfilesHolder;
+import fandc.managers.GmEventManager;
+import fandc.managers.OfflineBufferManager;
+//import fandc.pc.PcStats;
+//import fandc.templates.Ranking;
+import fandc.security.AntiFeedManager;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import l2f.commons.annotations.Nullable;
@@ -97,6 +116,7 @@ import l2f.gameserver.instancemanager.games.HandysBlockCheckerManager.ArenaParti
 import l2f.gameserver.listener.actor.OnAttackListener;
 import l2f.gameserver.listener.actor.OnMagicUseListener;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
+import l2f.gameserver.listener.actor.player.OnMoveListener;
 import l2f.gameserver.listener.actor.player.impl.ReviveAnswerListener;
 import l2f.gameserver.listener.actor.player.impl.ScriptAnswerListener;
 import l2f.gameserver.listener.actor.player.impl.SummonAnswerListener;
@@ -335,27 +355,6 @@ import l2f.gameserver.utils.SqlBatch;
 import l2f.gameserver.utils.Strings;
 import l2f.gameserver.utils.TeleportUtils;
 import l2f.gameserver.utils.Util;
-import l2f.gameserver.listener.actor.player.OnMoveListener;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.math.NumberUtils;
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
-import org.napile.primitive.Containers;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.CHashIntObjectMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import fandc.academy.AcademyList;
-import fandc.datatables.OfflineBuffersTable;
-import fandc.facebook.FacebookProfile;
-import fandc.facebook.FacebookProfilesHolder;
-import fandc.managers.GmEventManager;
-import fandc.managers.OfflineBufferManager;
-//import fandc.pc.PcStats;
-//import fandc.templates.Ranking;
-import fandc.security.AntiFeedManager;
 
 @SuppressWarnings("serial")
 public final class Player extends Playable implements PlayerGroup

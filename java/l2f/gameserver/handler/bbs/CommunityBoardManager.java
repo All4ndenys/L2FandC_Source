@@ -3,13 +3,12 @@ package l2f.gameserver.handler.bbs;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.templates.StatsSet;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fandc.dailyquests.DailyQuestHandler;
+import l2f.gameserver.Config;
+import l2f.gameserver.templates.StatsSet;
 
 public class CommunityBoardManager
 {

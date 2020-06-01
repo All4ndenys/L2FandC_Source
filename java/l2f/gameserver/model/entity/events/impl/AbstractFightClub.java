@@ -17,6 +17,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.reflect.MethodUtils;
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javolution.util.FastMap;
 import l2f.commons.annotations.Nullable;
 import l2f.commons.collections.MultiValueSet;
@@ -76,12 +82,6 @@ import l2f.gameserver.templates.InstantZone;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.reflect.MethodUtils;
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public abstract class AbstractFightClub extends GlobalEvent
 {

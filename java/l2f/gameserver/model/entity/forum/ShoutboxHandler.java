@@ -11,6 +11,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.regex.Matcher;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
@@ -20,9 +23,6 @@ import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.network.serverpackets.Say2;
 import l2f.gameserver.network.serverpackets.components.ChatType;
 import l2f.gameserver.utils.BatchStatement;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ShoutboxHandler
 {

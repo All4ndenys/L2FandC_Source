@@ -1,20 +1,21 @@
 package l2f.gameserver.network.loginservercon.lspackets;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.network.loginservercon.AuthServerCommunication;
-import l2f.gameserver.network.loginservercon.ReceivablePacket;
-import l2f.gameserver.network.loginservercon.gspackets.SetAccountInfo;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import org.napile.primitive.Containers;
 import org.napile.primitive.lists.IntList;
 import org.napile.primitive.lists.impl.ArrayIntList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import l2f.gameserver.Config;
+import l2f.gameserver.database.DatabaseFactory;
+import l2f.gameserver.network.loginservercon.AuthServerCommunication;
+import l2f.gameserver.network.loginservercon.ReceivablePacket;
+import l2f.gameserver.network.loginservercon.gspackets.SetAccountInfo;
 
 public class GetAccountInfo extends ReceivablePacket
 {

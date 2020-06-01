@@ -2,12 +2,12 @@ package l2f.gameserver.utils;
 
 import java.util.Arrays;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.GameServer;
 import l2f.gameserver.listener.game.OnConfigsReloaded;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public enum Debug
 {

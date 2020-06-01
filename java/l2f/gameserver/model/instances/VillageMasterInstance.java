@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.cache.Msg;
 import l2f.gameserver.data.xml.holder.ResidenceHolder;
@@ -43,9 +46,6 @@ import l2f.gameserver.utils.CertificationFunctions;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.SiegeUtils;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public final class VillageMasterInstance extends NpcInstance
 {

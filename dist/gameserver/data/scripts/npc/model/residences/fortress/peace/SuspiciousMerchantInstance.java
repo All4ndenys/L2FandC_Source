@@ -1,25 +1,11 @@
 package npc.model.residences.fortress.peace;
 
-import java.util.List;
-
-import l2f.gameserver.dao.SiegeClanDAO;
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.data.xml.holder.ResidenceHolder;
 import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
 import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
 import l2f.gameserver.model.entity.events.impl.SiegeEvent;
-import l2f.gameserver.model.entity.events.objects.SiegeClanObject;
-import l2f.gameserver.model.entity.residence.Castle;
 import l2f.gameserver.model.entity.residence.Fortress;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.model.pledge.Privilege;
 import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.SystemMessage2;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.templates.item.ItemTemplate;
 import l2f.gameserver.templates.npc.NpcTemplate;
 
 public class SuspiciousMerchantInstance extends NpcInstance

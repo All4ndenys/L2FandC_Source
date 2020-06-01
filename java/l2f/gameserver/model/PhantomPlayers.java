@@ -11,6 +11,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
@@ -46,9 +49,6 @@ import l2f.gameserver.templates.item.WeaponTemplate.WeaponType;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
 
 public class PhantomPlayers
 {

@@ -4,9 +4,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2f.gameserver.ConfigHolder;
-
 import org.apache.commons.lang3.StringUtils;
+
+import l2f.gameserver.ConfigHolder;
 
 public class ForumHandler
 {

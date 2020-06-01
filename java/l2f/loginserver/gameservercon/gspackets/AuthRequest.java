@@ -1,17 +1,13 @@
 package l2f.loginserver.gameservercon.gspackets;
 
-import l2f.commons.net.AdvIP;
-import l2f.loginserver.Config;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.loginserver.GameServerManager;
 import l2f.loginserver.gameservercon.GameServer;
 import l2f.loginserver.gameservercon.ReceivablePacket;
 import l2f.loginserver.gameservercon.lspackets.AuthResponse;
 import l2f.loginserver.gameservercon.lspackets.LoginServerFail;
-
-import java.util.ArrayList;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AuthRequest extends ReceivablePacket
 {

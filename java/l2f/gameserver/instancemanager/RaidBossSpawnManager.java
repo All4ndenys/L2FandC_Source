@@ -13,6 +13,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.xml.holder.NpcHolder;
 import l2f.gameserver.database.DatabaseFactory;
@@ -32,9 +35,6 @@ import l2f.gameserver.tables.GmListTable;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.templates.npc.NpcTemplate;
 import l2f.gameserver.utils.Location;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class RaidBossSpawnManager
 {

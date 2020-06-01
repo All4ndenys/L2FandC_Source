@@ -9,8 +9,8 @@ import l2f.gameserver.ai.Fighter;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.World;
 import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2f.gameserver.scripts.Functions;
 import l2f.gameserver.tables.SkillTable;
 
 /**

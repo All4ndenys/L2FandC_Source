@@ -1,11 +1,11 @@
 package l2f.gameserver.listener.actor.player.impl;
 
+import fandc.academy.AcademyList;
 import l2f.commons.lang.reference.HardReference;
 import l2f.gameserver.listener.actor.player.OnAnswerListener;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Request;
 import l2f.gameserver.network.serverpackets.components.ChatType;
-import fandc.academy.AcademyList;
 
 public class AcademyAnswerListener implements OnAnswerListener
 {

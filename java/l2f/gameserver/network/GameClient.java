@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.net.nio.impl.MMOClient;
 import l2f.commons.net.nio.impl.MMOConnection;
 import l2f.gameserver.Config;
@@ -21,9 +24,6 @@ import l2f.gameserver.network.loginservercon.SessionKey;
 import l2f.gameserver.network.loginservercon.gspackets.PlayerLogout;
 import l2f.gameserver.network.serverpackets.L2GameServerPacket;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class GameClient extends MMOClient<MMOConnection<GameClient>>
 {

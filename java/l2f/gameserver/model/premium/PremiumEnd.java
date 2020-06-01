@@ -6,9 +6,9 @@ import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.model.Party;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.actor.instances.player.Bonus;
+import l2f.gameserver.network.GameClient;
 import l2f.gameserver.network.loginservercon.AuthServerCommunication;
 import l2f.gameserver.network.loginservercon.gspackets.BonusRequest;
-import l2f.gameserver.network.GameClient;
 import l2f.gameserver.network.serverpackets.ExBR_PremiumState;
 import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
 

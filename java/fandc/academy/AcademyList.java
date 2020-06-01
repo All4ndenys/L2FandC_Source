@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.threading.RunnableImpl;
 import l2f.gameserver.Config;
@@ -16,8 +19,8 @@ import l2f.gameserver.data.xml.holder.ItemHolder;
 import l2f.gameserver.database.DatabaseFactory;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.Request;
-import l2f.gameserver.model.World;
 import l2f.gameserver.model.Request.L2RequestType;
+import l2f.gameserver.model.World;
 import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
 import l2f.gameserver.model.items.ItemInstance;
 import l2f.gameserver.model.mail.Mail;
@@ -40,9 +43,6 @@ import l2f.gameserver.tables.ClanTable;
 import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * @author claww

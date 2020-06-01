@@ -1,7 +1,5 @@
 package l2f.gameserver.model.instances;
 
-import gnu.trove.iterator.TIntObjectIterator;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
@@ -12,6 +10,10 @@ import java.util.TreeSet;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledFuture;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import gnu.trove.iterator.TIntObjectIterator;
 import l2f.commons.collections.MultiValueSet;
 import l2f.commons.lang.reference.HardReference;
 import l2f.commons.threading.RunnableImpl;
@@ -104,9 +106,6 @@ import l2f.gameserver.utils.ItemFunctions;
 import l2f.gameserver.utils.Location;
 import l2f.gameserver.utils.ReflectionUtils;
 import l2f.gameserver.utils.Strings;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class NpcInstance extends Creature
 {

@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.Config;
 import l2f.gameserver.data.htm.HtmCache;
 import l2f.gameserver.handler.admincommands.impl.AdminEditChar;
@@ -30,8 +32,6 @@ import l2f.gameserver.stats.Stats;
 import l2f.gameserver.utils.HtmlUtils;
 import l2f.gameserver.utils.PositionUtils;
 import l2f.gameserver.utils.Util;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class OnActionShift extends Functions
 {

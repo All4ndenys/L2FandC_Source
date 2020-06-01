@@ -3,6 +3,10 @@ package l2f.gameserver.network.clientpackets;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.math.SafeMath;
 import l2f.gameserver.Config;
 import l2f.gameserver.model.Creature;
@@ -14,10 +18,6 @@ import l2f.gameserver.model.items.TradeItem;
 import l2f.gameserver.network.serverpackets.components.CustomMessage;
 import l2f.gameserver.network.serverpackets.components.SystemMsg;
 import l2f.gameserver.utils.TradeHelper;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Список продаваемого в приватный магазин покупки

@@ -6,6 +6,11 @@ import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+// Mauricio - license 
+import fandc.streaming.StreamDatabaseHandler;
 import l2f.commons.net.nio.impl.SelectorThread;
 import l2f.commons.time.cron.SchedulingPattern;
 import l2f.commons.time.cron.SchedulingPattern.InvalidPatternException;
@@ -21,20 +26,13 @@ import l2f.gameserver.model.GameObjectsStorage;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.model.entity.Hero;
 import l2f.gameserver.model.entity.SevenSigns;
-import l2f.gameserver.model.entity.CCPHelpers.itemLogs.ItemLogList;
 import l2f.gameserver.model.entity.SevenSignsFestival.SevenSignsFestival;
 import l2f.gameserver.model.entity.olympiad.OlympiadDatabase;
 import l2f.gameserver.network.GameClient;
 import l2f.gameserver.network.loginservercon.AuthServerCommunication;
 import l2f.gameserver.network.serverpackets.SystemMessage;
 import l2f.gameserver.scripts.Scripts;
-import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-// Mauricio - license 
-import fandc.streaming.StreamDatabaseHandler;
 
 public class Shutdown extends Thread
 {
@@ -59,9 +57,9 @@ public class Shutdown extends Thread
 	}
 
 	/**
-	 * Время в секундах до отключения.
+	 * Ð’Ñ€ÐµÐ¼Ñ� Ð² Ñ�ÐµÐºÑƒÐ½Ð´Ð°Ñ… Ð´Ð¾ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ�.
 	 *
-	 * @return время в секундах до отключения сервера, -1 если отключение не запланировано
+	 * @return Ð²Ñ€ÐµÐ¼Ñ� Ð² Ñ�ÐµÐºÑƒÐ½Ð´Ð°Ñ… Ð´Ð¾ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ� Ñ�ÐµÑ€Ð²ÐµÑ€Ð°, -1 ÐµÑ�Ð»Ð¸ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð·Ð°Ð¿Ð»Ð°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾
 	 */
 	public int getSeconds()
 	{
@@ -69,9 +67,9 @@ public class Shutdown extends Thread
 	}
 
 	/**
-	 * Режим отключения.
+	 * Ð ÐµÐ¶Ð¸Ð¼ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ�.
 	 *
-	 * @return <code>SHUTDOWN</code> или <code>RESTART</code>, либо <code>NONE</code>, если отключение не запланировано.
+	 * @return <code>SHUTDOWN</code> Ð¸Ð»Ð¸ <code>RESTART</code>, Ð»Ð¸Ð±Ð¾ <code>NONE</code>, ÐµÑ�Ð»Ð¸ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð·Ð°Ð¿Ð»Ð°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾.
 	 */
 	public ShutdownMode getMode()
 	{
@@ -79,10 +77,10 @@ public class Shutdown extends Thread
 	}
 
 	/**
-	 * Запланировать отключение сервера через определенный промежуток времени.
+	 * Ð—Ð°Ð¿Ð»Ð°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ñ�ÐµÑ€Ð²ÐµÑ€Ð° Ñ‡ÐµÑ€ÐµÐ· Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½Ñ‹Ð¹ Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ðº Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸.
 	 *
-	 * @param seconds время в формате <code>hh:mm</code>
-	 * @param shutdownMode  <code>SHUTDOWN</code> или <code>RESTART</code>
+	 * @param seconds Ð²Ñ€ÐµÐ¼Ñ� Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ <code>hh:mm</code>
+	 * @param shutdownMode  <code>SHUTDOWN</code> Ð¸Ð»Ð¸ <code>RESTART</code>
 	 * @param makeBackup
 	 */
 	public synchronized void schedule(int seconds, ShutdownMode shutdownMode, boolean makeBackup)
@@ -103,10 +101,10 @@ public class Shutdown extends Thread
 	}
 
 	/**
-	 * Запланировать отключение сервера на определенное время.
+	 * Ð—Ð°Ð¿Ð»Ð°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ñ�ÐµÑ€Ð²ÐµÑ€Ð° Ð½Ð° Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½Ð¾Ðµ Ð²Ñ€ÐµÐ¼Ñ�.
 	 *
-	 * @param time время в формате cron
-	 * @param shutdownMode <code>SHUTDOWN</code> или <code>RESTART</code>
+	 * @param time Ð²Ñ€ÐµÐ¼Ñ� Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ cron
+	 * @param shutdownMode <code>SHUTDOWN</code> Ð¸Ð»Ð¸ <code>RESTART</code>
 	 * @param makeBackup
 	 */
 	public void schedule(String time, ShutdownMode shutdownMode, boolean makeBackup)

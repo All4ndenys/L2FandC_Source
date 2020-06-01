@@ -1,9 +1,10 @@
  package l2f.gameserver.model.reward;
  
- import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
- import l2f.gameserver.templates.item.ItemTemplate;
  import org.slf4j.Logger;
- import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.templates.item.EtcItemTemplate.EtcItemType;
+import l2f.gameserver.templates.item.ItemTemplate;
  
  public enum RewardItemGroup
  {

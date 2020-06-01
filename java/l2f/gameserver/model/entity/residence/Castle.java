@@ -8,6 +8,12 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
+import org.napile.primitive.maps.IntObjectMap;
+import org.napile.primitive.maps.impl.CTreeIntObjectMap;
+import org.napile.primitive.maps.impl.HashIntObjectMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import l2f.commons.dao.JdbcEntityState;
 import l2f.commons.dbutils.DbUtils;
 import l2f.commons.math.SafeMath;
@@ -34,12 +40,6 @@ import l2f.gameserver.templates.manor.SeedProduction;
 import l2f.gameserver.utils.GameStats;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Util;
-
-import org.napile.primitive.maps.IntObjectMap;
-import org.napile.primitive.maps.impl.CTreeIntObjectMap;
-import org.napile.primitive.maps.impl.HashIntObjectMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @SuppressWarnings("rawtypes")
 public class Castle extends Residence

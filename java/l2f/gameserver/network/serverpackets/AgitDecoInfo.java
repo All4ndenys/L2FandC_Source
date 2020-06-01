@@ -1,11 +1,11 @@
 package l2f.gameserver.network.serverpackets;
 
 
-import l2f.gameserver.model.entity.residence.ClanHall;
-import l2f.gameserver.model.entity.residence.ResidenceFunction;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import l2f.gameserver.model.entity.residence.ClanHall;
+import l2f.gameserver.model.entity.residence.ResidenceFunction;
 
 public class AgitDecoInfo extends L2GameServerPacket
 {

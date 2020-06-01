@@ -2,12 +2,12 @@ package l2f.gameserver.randoms;
 
 import java.io.File;
 
-import l2f.gameserver.model.Player;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.maxmind.geoip.LookupService;
+
+import l2f.gameserver.model.Player;
 
 /**
  * GeoLocation grep.

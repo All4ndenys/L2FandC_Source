@@ -12,6 +12,12 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import fandc.facebook.ActiveTask;
+import fandc.facebook.FacebookAction;
+import fandc.facebook.FacebookIdentityType;
+import fandc.facebook.OfficialPost;
 import l2f.commons.data.xml.AbstractHolder;
 import l2f.commons.threading.RunnableImpl;
 import l2f.commons.util.Rnd;
@@ -21,13 +27,6 @@ import l2f.gameserver.GameServer;
 import l2f.gameserver.ThreadPoolManager;
 import l2f.gameserver.listener.game.OnConfigsReloaded;
 import l2f.gameserver.utils.Log;
-
-import org.apache.commons.lang3.ArrayUtils;
-
-import fandc.facebook.ActiveTask;
-import fandc.facebook.FacebookAction;
-import fandc.facebook.FacebookIdentityType;
-import fandc.facebook.OfficialPost;
 
 public final class FacebookCommentsHolder extends AbstractHolder implements OnConfigsReloaded
 {

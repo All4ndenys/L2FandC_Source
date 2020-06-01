@@ -5,6 +5,8 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.commons.annotations.Nullable;
 import l2f.gameserver.ConfigHolder;
 import l2f.gameserver.GameServer;
@@ -12,8 +14,6 @@ import l2f.gameserver.listener.game.OnConfigsReloaded;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.templates.StatsSet;
 import l2f.gameserver.utils.Log;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class StreamsHolder implements OnConfigsReloaded
 {

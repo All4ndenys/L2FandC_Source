@@ -18,9 +18,9 @@
  */
 package fandc.dailyquests;
 
-import l2f.gameserver.templates.StatsSet;
 import fandc.dailyquests.drops.Droplist;
 import fandc.dailyquests.drops.DroplistGroup;
+import l2f.gameserver.templates.StatsSet;
 
 /**
  * @author UnAfraid

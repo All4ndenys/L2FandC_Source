@@ -8,14 +8,14 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.StringUtils;
+
 import l2f.gameserver.data.htm.bypasshandler.BypassType;
 import l2f.gameserver.handler.bbs.CommunityBoardManager;
 import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2f.gameserver.model.Player;
 import l2f.gameserver.utils.Log;
 import l2f.gameserver.utils.Strings;
-
-import org.apache.commons.lang3.StringUtils;
 
 
 public class BypassManager
