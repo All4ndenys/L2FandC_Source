@@ -81,6 +81,7 @@ import l2f.gameserver.templates.DoorTemplate;
 import l2f.gameserver.templates.InstantZone;
 import l2f.gameserver.templates.ZoneTemplate;
 import l2f.gameserver.utils.Location;
+import l2f.gameserver.utils.TimeUtils;
 import l2f.gameserver.utils.Util;
 
 public abstract class AbstractFightClub extends GlobalEvent
@@ -278,12 +279,6 @@ public abstract class AbstractFightClub extends GlobalEvent
 		_map = room.getMap();
 		_room = room;
 
-		boolean success = createTeams();
-		if (!success)
-		{
-			return;
-		}
-
 		for (Player player : room.getAllPlayers())
 		{
 			addObject(REGISTERED_PLAYERS, new FightClubPlayer(player));
@@ -291,39 +286,6 @@ public abstract class AbstractFightClub extends GlobalEvent
 		}
 
 		startTeleportTimer(room);
-	}
-
-	private boolean createTeams()
-	{
-		final List<FightClubTeamType> teamTypes = _map.getAllTeamTypes();
-		final FightClubTeamType[] allTypes = FightClubTeamType.values();
-		if (teamTypes.size() < _room.getTeamsCount())
-		{
-			_log.error("Error while Creating Teams! TeamTypes: " + teamTypes.size() + " Room Count: " + _room.getTeamsCount());
-			return false;
-		}
-		int typeIndex = 0;
-		int minFrequency = 1;
-		for (int i = 0; i < _room.getTeamsCount(); i++)
-		{
-			for (;; typeIndex++)
-			{
-				if (typeIndex >= allTypes.length)
-				{
-					typeIndex = 0;
-					minFrequency++;
-				}
-				if ((allowCreateTeamType(allTypes[typeIndex])) && (Collections.frequency(teamTypes, allTypes[typeIndex]) >= minFrequency))
-				{
-					FightClubTeam team = new FightClubTeam(i + 1);
-					team.setTeamType(this, allTypes[typeIndex]);
-					_teams.add(team);
-					typeIndex++;
-					break;
-				}
-			}
-		}
-		return true;
 	}
 
 	public String getShortName()
@@ -3152,6 +3114,11 @@ public abstract class AbstractFightClub extends GlobalEvent
 		}
 	}
 
+	public void printScheduledTime(long startTime)
+	{
+		info(getName() + " time - " + TimeUtils.toSimpleFormat(startTime));
+	}
+	
 	@Override
 	public boolean isInProgress()
 	{

@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
@@ -45,49 +46,17 @@ import l2f.gameserver.utils.Util;
 
 public class FightClubEventManager
 {
-
-	public enum CLASSES
-	{
-		FIGHTERS(13113, ClassId.duelist, ClassId.dreadnought, ClassId.titan, ClassId.grandKhauatari, ClassId.maestro, ClassId.doombringer, ClassId.maleSoulhound, ClassId.femaleSoulhound),
-		TANKS(13112, ClassId.phoenixKnight, ClassId.hellKnight, ClassId.evaTemplar, ClassId.shillienTemplar, ClassId.trickster),
-		ARCHERS(13114, ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.fortuneSeeker),
-		DAGGERS(13114, ClassId.adventurer, ClassId.windRider, ClassId.ghostHunter),
-		MAGES(13116, ClassId.archmage, ClassId.soultaker, ClassId.mysticMuse, ClassId.stormScreamer),
-		SUMMONERS(13118, ClassId.arcanaLord, ClassId.elementalMaster, ClassId.spectralMaster),
-		HEALERS(13115, ClassId.cardinal, ClassId.evaSaint, ClassId.shillienSaint, ClassId.dominator),
-		SUPPORTS(13117, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer, ClassId.doomcryer, ClassId.judicator);
-
-		private int _transformId;
-		private ClassId[] _classes;
-
-		private CLASSES(int transformId, ClassId... ids)
-		{
-			_transformId = transformId;
-			_classes = ids;
-		}
-
-		public ClassId[] getClasses()
-		{
-			return _classes;
-		}
-
-		public int getTransformId()
-		{
-			return _transformId;
-		}
-	}
-
 	private static final Logger LOG = LoggerFactory.getLogger(FightClubEventManager.class);
+	
 	private static FightClubEventManager _instance;
-
 	public static final Location RETURN_LOC = new Location(83208, 147672, -3494, 0);
 	public static final int FIGHT_CLUB_BADGE_ID = 6673;
 	public static final String BYPASS = "_fightclub";
-
-	private final Map<Integer, AbstractFightClub> _activeEvents = new ConcurrentHashMap<>();
-	private final List<FightClubGameRoom> _rooms = new CopyOnWriteArrayList<>();
+	private Map<Integer, AbstractFightClub> _activeEvents = new ConcurrentHashMap<Integer, AbstractFightClub>();
+	private List<FightClubGameRoom> _rooms = new CopyOnWriteArrayList<FightClubGameRoom>();
 	private final boolean _shutDown = false;
 	private AbstractFightClub _nextEvent = null;
+	private static Map<Long, String> boxes = new LinkedHashMap<Long, String>();
 
 	public FightClubEventManager()
 	{
@@ -98,10 +67,6 @@ public class FightClubEventManager
 	{
 		return _shutDown;
 	}
-
-	/*
-	 * Player
-	 */
 
 	/**
 	 * Looking for room, adding player and sending message Event MUST exist in one of the Rooms already!
@@ -124,9 +89,8 @@ public class FightClubEventManager
 			AbstractFightClub duplicatedEvent = prepareNewEvent(event);
 			roomFound = createRoom(duplicatedEvent);
 		}
-
+		
 		roomFound.addAlonePlayer(player);
-
 		player.sendMessage("You have registered succesfully to " + event.getName() + " Event!");
 	}
 
@@ -227,10 +191,6 @@ public class FightClubEventManager
 		}
 		return false;
 	}
-
-	/*
-	 * Rooms
-	 */
 
 	public void startEventCountdown(AbstractFightClub event, boolean isAutoRun)
 	{
@@ -376,7 +336,6 @@ public class FightClubEventManager
 				room.leaveRoom(player);
 				playersToChange.add(player);
 			}
-			//LOG.info("Equalizing FC Room, before:" + before + " toRemove:" + toRemove + " after:" + room.getPlayersCount() + " to Change:" + playersToChange.size());
 		}
 
 		// Adding to other room
@@ -390,7 +349,6 @@ public class FightClubEventManager
 				Player player = playersToChange.remove(0);
 				room.addAlonePlayer(player);
 			}
-			//LOG.info("Equalizing FC Room, Before: " + before + " Final:" + room.getPlayersCount());
 		}
 	}
 
@@ -511,8 +469,8 @@ public class FightClubEventManager
 
 			if (event.isAutoTimed())
 			{
-				Calendar nextEventDate = getClosestEventDate(event.getAutoStartTimes());
-
+				Calendar nextEventDate = getClosestEventDate(event.getAutoStartTimes());				
+				event.printScheduledTime(nextEventDate.getTimeInMillis());
 				ThreadPoolManager.getInstance().schedule(new EventRunThread(event), nextEventDate.getTimeInMillis() - System.currentTimeMillis());
 
 				// Closest Event
@@ -588,9 +546,8 @@ public class FightClubEventManager
 				return;
 
 			Thread.sleep(60000L);
-
 			Calendar nextEventDate = getClosestEventDate(_event.getAutoStartTimes());
-
+			_event.printScheduledTime(nextEventDate.getTimeInMillis());			
 			ThreadPoolManager.getInstance().schedule(new EventRunThread(_event), nextEventDate.getTimeInMillis() - System.currentTimeMillis());
 		}
 	}
@@ -711,6 +668,11 @@ public class FightClubEventManager
 					sendErrorMessageToPlayer(player, "Chaotic players may not participate in Fight Club!");
 				return false;
 			}
+			if(boxes.containsValue(player.getHWID())) 
+			{
+				sendErrorMessageToPlayer(player, "Only one box is allowed for this event!"); // TODO: Вынести в ДП.
+				return false;
+			}
 		}
 
 		return true;
@@ -820,8 +782,12 @@ public class FightClubEventManager
 		if (event == null)
 			return;
 
-		if (event.leaveEvent(player, true))
-			player.sendMessage("You have left the event!");
+		if(event.leaveEvent(player, true))
+		{
+			if(boxes.containsKey(player.getStoredId()))
+				boxes.remove(player.getStoredId());		
+			player.sendMessage("You have left the event!");	
+		}	
 	}
 
 	private void askQuestion(Player player, String question)
@@ -850,6 +816,42 @@ public class FightClubEventManager
 		{
 		}
 
+	}
+	
+	public enum CLASSES
+	{
+		FIGHTERS(13113, ClassId.duelist, ClassId.dreadnought, ClassId.titan, ClassId.grandKhauatari, ClassId.maestro, ClassId.doombringer, ClassId.maleSoulhound, ClassId.femaleSoulhound),
+		TANKS(13112, ClassId.phoenixKnight, ClassId.hellKnight, ClassId.evaTemplar, ClassId.shillienTemplar, ClassId.trickster),
+		ARCHERS(13114, ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.fortuneSeeker),
+		DAGGERS(13114, ClassId.adventurer, ClassId.windRider, ClassId.ghostHunter),
+		MAGES(13116, ClassId.archmage, ClassId.soultaker, ClassId.mysticMuse, ClassId.stormScreamer),
+		SUMMONERS(13118, ClassId.arcanaLord, ClassId.elementalMaster, ClassId.spectralMaster),
+		HEALERS(13115, ClassId.cardinal, ClassId.evaSaint, ClassId.shillienSaint, ClassId.dominator),
+		SUPPORTS(13117, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer, ClassId.doomcryer, ClassId.judicator);
+
+		private int _transformId;
+		private ClassId[] _classes;
+
+		private CLASSES(int transformId, ClassId... ids)
+		{
+			_transformId = transformId;
+			_classes = ids;
+		}
+
+		public ClassId[] getClasses()
+		{
+			return _classes;
+		}
+
+		public int getTransformId()
+		{
+			return _transformId;
+		}
+	}
+	
+	public static void clearBoxes()
+	{
+		boxes.clear();
 	}
 
 	public AbstractFightClub getEventByObjId(int objId)

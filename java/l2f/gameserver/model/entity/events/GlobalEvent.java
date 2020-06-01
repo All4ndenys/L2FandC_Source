@@ -248,7 +248,6 @@ public abstract class GlobalEvent extends LoggerObject
 		return objectsFromType;
 	}
 
-	@SuppressWarnings("unchecked")
 	public <O extends Serializable> O getFirstObject(String name)
 	{
 		final List<O> objects = getObjects(name);
